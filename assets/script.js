@@ -1,8 +1,3 @@
-fetch ("components/navbar.html")
-.then(response => response.text())
-.then(data =>{
-    document.getElementById("navbar").innerHTML =data;})
-.catch(err => console.error("navbar load error",err));      
 const form = document.getElementById("orderForm");
     const customerList = document.getElementById("customerList");
     const entryCount = document.getElementById("entryCount");
@@ -153,4 +148,4 @@ const form = document.getElementById("orderForm");
       deleteEntry(customer, index);
     }
 
-    renderTables();
+    renderTables(); 

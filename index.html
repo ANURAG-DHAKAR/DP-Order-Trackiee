@@ -11,10 +11,39 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="/assets/images/title-logo.png">
 </head>
 <body>
- <!-- navbar-load -->
- <div id="navbar"></div>
- <script src="/assets/script.js"></script>
+  <div class="header"><img src="/assets/images/title-logo.png" alt="" width="80px" height="auto">
+     <span
+      class="t-name"> Dhakad</span><span class="t-name2">Pureveda</span><span class="t-name3">Trackiee</span></div>
+
+  <div class="container">
+    <div class="add-header">
+      <h2>Add New Entry</h2>
+      <span id="entryCount" class="entry-count">0 entries</span>
+    </div>
+
+    <form id="orderForm">
+      <input type="text" id="customerName" placeholder="Customer Name" required />
+      <input type="text" id="product" placeholder="Product" required />
+      <input type="number" id="qty" placeholder="Qty" step="any" required />
+      <select id="unit">
+        <option value="KG">KG</option>
+        <option value="Quintal">Quintal</option>
+        <option value="Gram">Gram</option>
+      </select>
+      <input type="number" id="rate" placeholder="Rate" step="0.01" required />
+      <select id="delivered">
+        <option value="Yes">Delivered - Yes</option>
+        <option value="No">Delivered - No</option>
+      </select>
+      <button type="submit">Add Entry <i class="bi bi-plus-circle"></i></button>
+    </form>
+
+    <div id="customerList" class="customer-section"></div>
+  </div>
+  <script src="/assets/script.js"></script>
 </body>
+
 </html> 
